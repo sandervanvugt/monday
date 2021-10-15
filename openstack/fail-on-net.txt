@@ -1,0 +1,14 @@
+Applying 192.168.4.43_network.pp
+192.168.4.43_network.pp:                          [ ERROR ]        
+Applying Puppet manifests                         [ ERROR ]
+
+ERROR : Error appeared during Puppet run: 192.168.4.43_network.pp
+Error: Evaluation Error: Error while evaluating a Function Call, 'regsubst' parameter 'target' expects a value of type Array or String, got Undef (file: /var/tmp/packstack/0bb5e3b3b46a4068a4f1ba8991c510dd/modules/packstack/manifests/neutron/ovn_agent.pp, line: 4, column: 26) on node openstack83.example.com
+You will find full trace in log /var/tmp/packstack/20210120-051815-ctgzm479/manifests/192.168.4.43_network.pp.log
+Please check log file /var/tmp/packstack/20210120-051815-ctgzm479/openstack-setup.log for more information
+Additional information:
+ * Parameter CONFIG_NEUTRON_L2_AGENT: You have chosen OVN Neutron backend. Note that this backend does not support the VPNaaS plugin. Geneve will be used as the encapsulation method for tenant networks
+ * File /root/keystonerc_admin has been created on OpenStack client host 192.168.4.43. To use the command line tools you need to source the file.
+ * To access the OpenStack Dashboard browse to http://192.168.4.43/dashboard .
+Please, find your login credentials stored in the keystonerc_admin in your home directory.
+

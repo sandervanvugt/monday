@@ -1,0 +1,3 @@
+ERROR : Error appeared during Puppet run: 192.168.4.43_controller.pp
+Error: Execution of '/usr/bin/openstack service create --format shell volumev2 --name cinderv2 --description Cinder Service v2' returned 1: Gateway Timeout (HTTP 504)
+
